@@ -1,0 +1,43 @@
+import java.util.*;
+
+public class decode_ways {
+  Map<Integer, Integer> memo = new HashMap<>();
+
+    public int numDecodings(String s) {
+        return recursiveWithMemo(0, s);
+    }
+    
+    private int recursiveWithMemo(int index, String str) {
+        // Have we already seen this substring?
+        if (memo.containsKey(index)) {
+            return memo.get(index);
+        }
+        
+        // If you reach the end of the string
+        // Return 1 for success.
+        if (index == str.length()) {
+            return 1;
+        }
+
+        // If the string starts with a zero, it can't be decoded
+        if (str.charAt(index) == '0') {
+            return 0;
+        }
+
+        if (index == str.length() - 1) {
+            return 1;
+        }
+
+
+        int ans = recursiveWithMemo(index + 1, str);
+        String substring = str.substring(index, index + 2);
+        if (Integer.parseInt(str.substring(index, index + 2)) <= 26) {
+             ans += recursiveWithMemo(index + 2, str);
+             System.out.println(ans);
+         }
+
+        // Save for memoization
+        memo.put(index, ans);
+        return ans;
+    }
+}
