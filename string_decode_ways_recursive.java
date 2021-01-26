@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class decode_ways {
+public class string_decode_ways_recursive {
   Map<Integer, Integer> memo = new HashMap<>();
 
     public int numDecodings(String s) {
@@ -30,10 +30,9 @@ public class decode_ways {
 
 
         int ans = recursiveWithMemo(index + 1, str);
-        String substring = str.substring(index, index + 2);
+        // String substring = str.substring(index, index + 2);
         if (Integer.parseInt(str.substring(index, index + 2)) <= 26) {
              ans += recursiveWithMemo(index + 2, str);
-             System.out.println(ans);
          }
 
         // Save for memoization

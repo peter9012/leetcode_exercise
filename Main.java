@@ -8,9 +8,13 @@ class Main {
     // String str = "PAYPALISHIRING";
     // System.out.println(zigzag_cov.zigzagConversion(str, 3));
 
-    decode_ways decode_ways = new decode_ways();
+    // string_decode_ways_recursive decode_ways = new string_decode_ways_recursive();
+    // String str = "23212";
+    // System.out.println(decode_ways.numDecodings(str));
+
+    string_decode_ways_iterative decode_ways = new string_decode_ways_iterative();
     String str = "23212";
-    System.out.println(decode_ways.numDecodings(str));
+    System.out.println(decode_ways.numDecodings_space(str));
 
   }
 }

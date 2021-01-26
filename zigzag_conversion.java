@@ -1,4 +1,3 @@
-import java.util.*;
 
 public class zigzag_conversion {
   public String zigzagConversion(String s, int numRows) {
