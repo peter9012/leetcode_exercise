@@ -12,9 +12,16 @@ class Main {
     // String str = "23212";
     // System.out.println(decode_ways.numDecodings(str));
 
-    string_decode_ways_iterative decode_ways = new string_decode_ways_iterative();
-    String str = "23212";
-    System.out.println(decode_ways.numDecodings_space(str));
+    // string_decode_ways_iterative decode_ways = new string_decode_ways_iterative();
+    // String str = "23212";
+    // System.out.println(decode_ways.numDecodings_space(str));
 
+    // text_justification justify = new text_justification();
+    // String[] words = {"This", "is", "an", "example", "of", "text", "justification."};
+    // System.out.println(justify.fullJustidy(words,5));
+
+    implement_strstr implement_strstr  = new implement_strstr();
+    String haystack = "Helloalall", needle= "all";
+    System.out.println(implement_strstr.strStr(haystack, needle));
   }
 }
