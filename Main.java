@@ -20,8 +20,17 @@ class Main {
     // String[] words = {"This", "is", "an", "example", "of", "text", "justification."};
     // System.out.println(justify.fullJustidy(words,5));
 
-    implement_strstr implement_strstr  = new implement_strstr();
-    String haystack = "Helloalall", needle= "all";
-    System.out.println(implement_strstr.strStr(haystack, needle));
+    // implement_strstr implement_strstr  = new implement_strstr();
+    // String haystack = "Helloalenall", needle= "all";
+    // System.out.println(implement_strstr.strStr(haystack, needle));
+
+    // String gfg = new String("Welcome to geeksforgeeks");
+    // System.out.print("Found g first at position : ");
+    // System.out.println(gfg.indexOf('W'));
+
+    Longest_common_prefix Longest_common_prefix  = new Longest_common_prefix();
+    String[] strs = {"fox"};
+    System.out.println(Longest_common_prefix.longestCommonPrefix(strs));
+    
   }
 }
