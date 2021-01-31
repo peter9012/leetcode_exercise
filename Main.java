@@ -29,7 +29,7 @@ class Main {
     // System.out.println(gfg.indexOf('W'));
 
     Longest_common_prefix Longest_common_prefix  = new Longest_common_prefix();
-    String[] strs = {"fox"};
+    String[] strs = {"flower","flo","floor"};
     System.out.println(Longest_common_prefix.longestCommonPrefix(strs));
     
   }
