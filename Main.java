@@ -28,9 +28,11 @@ class Main {
     // System.out.print("Found g first at position : ");
     // System.out.println(gfg.indexOf('W'));
 
-    Longest_common_prefix Longest_common_prefix  = new Longest_common_prefix();
-    String[] strs = {"flower","flo","floor"};
-    System.out.println(Longest_common_prefix.longestCommonPrefix(strs));
-    
+    // Longest_common_prefix Longest_common_prefix  = new Longest_common_prefix();
+    // String[] strs = {"flower","flo","floor"};
+    // System.out.println(Longest_common_prefix.longestCommonPrefix(strs));
+    length_of_last_word length_of_last_word = new length_of_last_word();
+    String str = "Hello world";
+    System.out.println(length_of_last_word.lengthOfLastWord(str));
   }
 }
