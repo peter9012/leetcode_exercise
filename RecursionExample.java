@@ -1,4 +1,4 @@
-class GFG { 
+class RecursionExample { 
   static void printFun(int test) 
   { 
       if (test < 1) 

@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 class Main {
   public static void main(String[] args) {
     // decode_string_01 pa = new decode_string_01();
@@ -31,8 +33,25 @@ class Main {
     // Longest_common_prefix Longest_common_prefix  = new Longest_common_prefix();
     // String[] strs = {"flower","flo","floor"};
     // System.out.println(Longest_common_prefix.longestCommonPrefix(strs));
-    length_of_last_word length_of_last_word = new length_of_last_word();
-    String str = "Hello world";
-    System.out.println(length_of_last_word.lengthOfLastWord(str));
+    // length_of_last_word length_of_last_word = new length_of_last_word();
+    // String str = "Hello world";
+    // System.out.println(length_of_last_word.lengthOfLastWord(str));
+
+    HashMap<String, Integer> map  = new HashMap<>(); 
+    map.put("a", 100); 
+    map.put("b", 200); 
+    map.put("c", 300); 
+    map.put("d", 400); 
+
+    // print map details 
+    System.out.println("HashMap: "
+                   + map.toString()); 
+
+
+    int k = map.getOrDefault("b", 500); 
+
+    // print the value of k returned by 
+    // getOrDefault(Object key, V defaultValue) method 
+  System.out.println("Returned Value: " + k); 
   }
 }
