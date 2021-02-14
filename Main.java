@@ -37,21 +37,23 @@ class Main {
     // String str = "Hello world";
     // System.out.println(length_of_last_word.lengthOfLastWord(str));
 
-    HashMap<String, Integer> map  = new HashMap<>(); 
-    map.put("a", 100); 
-    map.put("b", 200); 
-    map.put("c", 300); 
-    map.put("d", 400); 
+    // HashMap<String, Integer> map  = new HashMap<>(); 
+    // map.put("a", 100); 
+    // map.put("b", 200); 
+    // map.put("c", 300); 
+    // map.put("d", 400); 
 
-    // print map details 
-    System.out.println("HashMap: "
-                   + map.toString()); 
+    // // print map details 
+    // System.out.println("HashMap: "
+    //                + map.toString()); 
 
 
-    int k = map.getOrDefault("b", 500); 
+    // int k = map.getOrDefault("b", 500); 
 
     // print the value of k returned by 
     // getOrDefault(Object key, V defaultValue) method 
-  System.out.println("Returned Value: " + k); 
+  // System.out.println("Returned Value: " + k);
+  climb_stairs climb_stairs  = new climb_stairs();
+  System.out.println(climb_stairs.climbStairs(5));
   }
 }
