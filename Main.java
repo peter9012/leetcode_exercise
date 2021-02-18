@@ -53,7 +53,11 @@ class Main {
     // print the value of k returned by 
     // getOrDefault(Object key, V defaultValue) method 
   // System.out.println("Returned Value: " + k);
-  climb_stairs climb_stairs  = new climb_stairs();
-  System.out.println(climb_stairs.climbStairs(5));
+
+  // climb_stairs climb_stairs  = new climb_stairs();
+  // System.out.println(climb_stairs.climbStairs(5));
+  unique_path uniquePaths  = new unique_path();
+  System.out.println(uniquePaths.uniquePaths(3,3));
+
   }
 }
