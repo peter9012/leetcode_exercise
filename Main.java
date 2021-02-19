@@ -56,8 +56,21 @@ class Main {
 
   // climb_stairs climb_stairs  = new climb_stairs();
   // System.out.println(climb_stairs.climbStairs(5));
-  unique_path uniquePaths  = new unique_path();
-  System.out.println(uniquePaths.uniquePaths(3,3));
+  // unique_path uniquePaths  = new unique_path();
+  // System.out.println(uniquePaths.uniquePaths(3,3));
 
+  unique_path_2 uniquePaths  = new unique_path_2();
+  // int[][] obstacleGrid = {
+  //   {0, 0, 0},
+  //   {0, 1, 0},
+  //   {0, 0, 0}
+  //  };
+   int[][] obstacleGrid = {
+    {0, 0, 0, 0},
+    {0, 1, 0, 0},
+    {0, 0, 1, 0},
+    {0, 0, 0, 0}
+   };
+  System.out.println(uniquePaths.uniquePathsWithObstacles(obstacleGrid));
   }
 }
