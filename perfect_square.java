@@ -21,6 +21,5 @@ public class perfect_square {
       }
     }
     return dp[n];
-
   }
 }
