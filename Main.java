@@ -68,7 +68,12 @@ class Main {
   //  };
   // System.out.println(uniquePaths.uniquePathsWithObstacles(obstacleGrid));
 
-  perfect_square perfectSquare = new perfect_square();
-  System.out.println(perfectSquare.numSquares(12));
+  // perfect_square perfectSquare = new perfect_square();
+  // System.out.println(perfectSquare.numSquares(12));
+
+  remove_element removeElement = new remove_element();
+  int[] array = {0,1,2,2,3,0,4,2};
+  int val = 2;
+  System.out.println(removeElement.removeElement(array, val));
   }
 }
