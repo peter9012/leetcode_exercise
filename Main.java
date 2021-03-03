@@ -1,4 +1,4 @@
-import java.util.HashMap;
+import java.util.*;
 
 class Main {
   public static void main(String[] args) {
@@ -71,9 +71,15 @@ class Main {
   // perfect_square perfectSquare = new perfect_square();
   // System.out.println(perfectSquare.numSquares(12));
 
-  remove_element removeElement = new remove_element();
-  int[] array = {0,1,2,2,3,0,4,2};
-  int val = 2;
-  System.out.println(removeElement.removeElement(array, val));
+  // remove_element removeElement = new remove_element();
+  // int[] array = {0,1,2,2,3,0,4,2};
+  // int val = 2;
+  // System.out.println(removeElement.removeElement(array, val));
+
+  // rotate_array rotateArray = new rotate_array();
+  // int[] array = {1,2,3,4,5,6,7};
+  // int k =3;
+  // rotateArray.rotate(array, k);
+  // System.out.println(Arrays.toString(array));
   }
 }
