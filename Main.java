@@ -117,8 +117,8 @@ class Main {
     // String str = "aaabbbcc";
     // System.out.println(compressString.compress(str));
 
-    // partition_label partitionLabel = new partition_label();
-    // String str = "ababcbacadefegdehijhklij";
-    // System.out.println(partitionLabel.partitionLabels(str));
+    partition_label partitionLabel = new partition_label();
+    String str = "ababcbacadefegdehijhklij";
+    System.out.println(partitionLabel.partitionLabels(str));
   } 
 }

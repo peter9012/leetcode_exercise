@@ -1,4 +1,4 @@
-package perfect_square_279;
+package Perfect_Square_279;
 import java.util.Arrays;
 
 public class perfect_square {
