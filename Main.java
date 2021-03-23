@@ -1,5 +1,8 @@
 import java.util.*;
 
+import Perfect_Square_279.perfect_square;
+import Perfect_Square_279.perfect_square_02;
+
 class Main {
   public static void main(String[] args) {
     // decode_string_01 pa = new decode_string_01();
@@ -81,5 +84,41 @@ class Main {
   // int k =3;
   // rotateArray.rotate(array, k);
   // System.out.println(Arrays.toString(array));
-  }
+
+  // job_schedule jobSchedule = new job_schedule();
+  // int[] array = {7,3,8,1,7,1};
+  // int d =3;
+  // System.out.println(jobSchedule.minDifficulty(array, d));
+
+  // int[][] directions = new int[][]{{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+  // System.out.println(directions[0][0]);
+  // System.out.println(directions[0][1]);
+  // System.out.println(directions[1][0]);
+  // System.out.println(directions[1][1]);
+  // System.out.println(directions[2][0]);
+  // System.out.println(directions[2][1]);
+  // String S1 = "%20";
+  // int length = S1.length();
+  // System.out.println("Length of a String is: " + length);
+
+    // char ch1, ch2;
+    // ch1 = 'b';
+    // int i1;
+    // i1 = Character.getNumericValue(ch1);
+    // String str1 = "Numeric value of " + ch1 + " is " + i1;
+    // System.out.println( str1 );
+
+    // one_away oneEditAway = new one_away();
+    // String s1 = "apple"; 
+    // String s2 = "aple";
+    // System.out.println(oneEditAway.oneEditAway(s1,s2));
+
+    // string_compression compressString = new string_compression();
+    // String str = "aaabbbcc";
+    // System.out.println(compressString.compress(str));
+
+    // partition_label partitionLabel = new partition_label();
+    // String str = "ababcbacadefegdehijhklij";
+    // System.out.println(partitionLabel.partitionLabels(str));
+  } 
 }
