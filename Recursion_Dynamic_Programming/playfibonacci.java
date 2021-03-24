@@ -7,7 +7,7 @@ public class playfibonacci {
     return fib(n-1) + fib(n-2);
   }
   public static void main(String[] args) {
-    int n = 6;
+    int n = 11;
     System.out.println(fib(n));
   } 
 }
