@@ -22,7 +22,7 @@ public class kth_to_last_element {
     head.next = new_node;
   }
 
-  static void printList(LinkedListNode head) {
+  void printList(LinkedListNode head) {
     while (head != null) {
       System.out.print(head.data + " ");
       head = head.next;
