@@ -57,9 +57,11 @@ public class LinkNodeSwapNodesRecursion {
     list.head.next = second;
     second.next = third;
     third.next = four;
-
+    System.out.println("Linked list before calling swapPairs() ");
     printLists(list.head);
+    System.out.println("");
     ListNode st = list.swapPairs(list.head);
+    System.out.println("Linked list after calling swapPairs() ");
     printLists(st);
   }
 }
