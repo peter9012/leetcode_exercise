@@ -5,9 +5,9 @@ public class delete_middle_node {
     if(n == null || n.next == null) {
       return false;
     }
-    LinkedListNode next = n.next;
-    n.data = next.data;
-    n.next = next.next;
+    LinkedListNode node = n.next;
+    n.data = node.data;
+    n.next = node.next;
     return true;
   }
 }
