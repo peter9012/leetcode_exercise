@@ -1,3 +1,5 @@
+package linked_lists;
+
 public class kth_to_last_element {
   static LinkedListNode head;
 
