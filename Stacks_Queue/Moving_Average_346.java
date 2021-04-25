@@ -3,6 +3,7 @@ package Stacks_Queue;
 import java.util.*;
 
 public class Moving_Average_346 {
+
   static class MovingAverage {
     int size;
     List queue = new ArrayList<Integer>();
@@ -10,7 +11,6 @@ public class Moving_Average_346 {
     public MovingAverage(int size) {
       this.size = size;
     }
-
     public double next(int val) {
       queue.add(val);
       int windowSum = 0;
@@ -18,7 +18,7 @@ public class Moving_Average_346 {
       windowSum += (int)queue.get(i);
       return windowSum * 1.0 / Math.min(queue.size(), size);
     }
-    
+
   }
 
   public static void main(String[] args)
