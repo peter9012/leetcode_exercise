@@ -1,7 +1,7 @@
 package Stacks_Queue;
 
 public class Moving_Average_346_Circular {
-  static class MovingAverage {
+  public static class MovingAverage {
     int size, head = 0, windowSum = 0, count = 0;
     int[] queue;
     public MovingAverage(int size) {
