@@ -1,4 +1,4 @@
-package Sliding_Window;
+package Pattern_Sliding_Window;
 
 import java.util.*;
 
