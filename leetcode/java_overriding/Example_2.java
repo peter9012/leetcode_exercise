@@ -4,10 +4,10 @@ package java_overriding;
 public class Example_2 {
 
   public static void foo() {
-    System.out.println("Test.foo() called ");
+    System.out.println("MaximumScore.foo() called ");
   }
   public static void foo(int a) { 
-    System.out.println("Test.foo(int) called ");
+    System.out.println("MaximumScore.foo(int) called ");
   }
   public static void main(String args[])
   { 
