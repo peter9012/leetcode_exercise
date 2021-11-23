@@ -1,3 +1,7 @@
+package Climbing_Stairs_70;
+
+import java.util.HashMap;
+
 public class climb_stairs {
   // Brute Force
   // public int climbStairs(int n) {
@@ -37,17 +41,30 @@ public class climb_stairs {
   //   return memo[i];
   // }
 
-  // Dynamic Programming
-  public int climbStairs(int n) {
-    if(n == 1) {
-      return 1;
+  //  top-down implementation
+  private HashMap<Integer, Integer> memo = new HashMap<>();
+  private int dp(int i){
+    if (i <= 2) return i;
+    if (!memo.containsKey(i)) {
+      memo.put(i, dp(i-1)+ dp(i-2));
     }
-    int[] dp = new int[n+1];
-    dp[1] = 1;
-    dp[2] = 2;
-    for (int i = 3; i <= n; i++) {
-      dp[i] = dp[i - 1] + dp[i - 2];
-    }
-  return dp[n];
+    return memo.get(i);
   }
+  public int climbStairs(int n) {
+    return dp(n);
+  }
+
+  // Dynamic Programming
+//  public int climbStairs(int n) {
+//    if(n == 1) {
+//      return 1;
+//    }
+//    int[] dp = new int[n+1];
+//    dp[1] = 1;
+//    dp[2] = 2;
+//    for (int i = 3; i <= n; i++) {
+//      dp[i] = dp[i - 1] + dp[i - 2];
+//    }
+//  return dp[n];
+//  }
 }
