@@ -19,6 +19,7 @@ public class Brute_Force_solution {
 //    f2
     //f4
     //f3
+    //f6
     System.out.println(maxSubArray(arr));
   }
 }
