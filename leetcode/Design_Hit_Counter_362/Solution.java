@@ -23,7 +23,6 @@ public class Solution {
       }
       return this.hits.size();
     }
-
   }
   public static void main(String[] args)
   {
