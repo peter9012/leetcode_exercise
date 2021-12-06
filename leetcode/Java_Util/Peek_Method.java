@@ -12,6 +12,7 @@ public class Peek_Method {
     Q.add(35658786);
     Q.add(5278367);
     Q.add(74381793);
+    Q.add(889988);
     // print queue
     System.out.println("Queue: " + Q);
     // print head
