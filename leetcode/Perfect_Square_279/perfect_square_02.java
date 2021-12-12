@@ -1,5 +1,5 @@
 package Perfect_Square_279;
-import java.util.Arrays;
+import java.util.*;
 
 public class perfect_square_02 {
   public static int numSquares(int n) {
