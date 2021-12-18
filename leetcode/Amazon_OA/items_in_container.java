@@ -1,9 +1,6 @@
 package Amazon_OA;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class items_in_container {
   public static List<Integer> numberOfItems(String s, List<Integer> startIndices, List<Integer> endIndices) {
