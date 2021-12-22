@@ -3,7 +3,7 @@ package Min_Stack_155;
 import java.util.*;
 
 public class MinStack {
-  private Stack<int[]> stack = new Stack<>();
+  private final Stack<int[]> stack = new Stack<>();
 
   public MinStack() { }
 
