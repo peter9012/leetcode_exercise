@@ -1,6 +1,6 @@
 package Valid_Parentheses_20;
 
-import java.util.Stack;
+import java.util.*;
 
 public class Solution {
   public boolean isValid(String s) {
