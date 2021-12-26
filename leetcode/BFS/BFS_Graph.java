@@ -3,7 +3,7 @@ package BFS;
 import java.util.*;
 
 public class BFS_Graph {
-  private int V;   // No. of vertices
+  private int V;
   private LinkedList<Integer> adj[]; //Adjacency Lists
 
   // Constructor
