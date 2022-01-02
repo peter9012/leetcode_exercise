@@ -35,7 +35,6 @@ class Solution {
     visited.put(node, cloneNode);
 
     // Iterate through the neighbors to generate their clones
-    // and prepare a list of cloned neighbors to be added to the cloned node.
     for (Node neighbor: node.neighbors) {
       cloneNode.neighbors.add(cloneGraph(neighbor));
     }
