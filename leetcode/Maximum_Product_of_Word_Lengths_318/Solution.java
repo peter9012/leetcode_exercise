@@ -14,7 +14,7 @@ public class Solution {
     for (int i = 0; i < n; ++i) {
       bitmask = 0;
       for (char ch : words[i].toCharArray()) {
-        // add bit number bit_number in bitmask
+
         bitmask |= 1 << bitNumber(ch);
       }
       masks[i] = bitmask;
