@@ -32,6 +32,6 @@ public class Solution {
   {
     int nums[] = {1,1,1,1,1};
     int target = 3;
-    System.out.println("The number of ways to assign symbols to make the sum of nums be "+ target + "  is " + findTargetSumWays(nums,target));
+    System.out.println("The number of ways to assign symbols to make the sum of nums be "+ target + " is " + findTargetSumWays(nums,target));
   }
 }
