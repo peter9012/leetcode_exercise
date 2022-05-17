@@ -1,9 +1,9 @@
-package Check_Permutation_1_2;
+package Q1_02_Check_Permutation;
 
 public class Solution {
 
 
-  static boolean arePermutation(String s, String t) {
+  public static boolean arePermutation(String s, String t) {
 
     if (s.length() != t.length()) {
       return false;
