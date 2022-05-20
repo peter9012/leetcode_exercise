@@ -1,4 +1,4 @@
-package BubbleSort;
+package Q10_Sort.BubbleSort;
 
 public class BubbleSort {
   void bubbleSort(int arr[])
@@ -24,6 +24,7 @@ public class BubbleSort {
   }
 
   // Driver method to test above
+//  Runtime: 0(n^2) average and worst case. Memory: 0(1).
   public static void main(String args[])
   {
       BubbleSort ob = new BubbleSort();

@@ -1,4 +1,4 @@
-package SelectionSort;
+package Q10_Sort.SelectionSort;
 
 public class SelectionSort {
   void sort(int arr[]) {
@@ -31,6 +31,7 @@ public class SelectionSort {
   }
 
   // Driver code to test above
+//  Runtime: 0(n^2) average and worst case. Memory: 0(1).
   public static void main(String args[])
   {
       SelectionSort ob = new SelectionSort();
