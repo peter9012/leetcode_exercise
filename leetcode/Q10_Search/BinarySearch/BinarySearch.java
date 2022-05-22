@@ -1,4 +1,4 @@
-package Search;
+package Q10_Search.BinarySearch;
 
 // Java implementation of recursive Binary Search
 class BinarySearch {
