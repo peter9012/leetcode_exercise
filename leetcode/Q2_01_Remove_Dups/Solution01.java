@@ -4,7 +4,7 @@ import CTCLLibrary.LinkedListNode;
 
 import java.util.HashSet;
 
-public class Solution {
+public class Solution01 {
   public static void deleteDups(LinkedListNode n) {
     HashSet<Integer> set = new HashSet<Integer>();
     LinkedListNode previous = null;
