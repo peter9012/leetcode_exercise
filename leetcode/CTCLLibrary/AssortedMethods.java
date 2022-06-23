@@ -20,6 +20,16 @@ public class AssortedMethods {
     return randomIntInRange(1, 100) <= percentTrue;
   }
 
+  public static boolean[][] randomBooleanMatrix(int M, int N, int percentTrue) {
+    boolean[][] matrix = new boolean[M][N];
+    for (int i = 0; i < M; i++) {
+      for (int j = 0; j < N; j++) {
+        matrix[i][j] = randomBoolean(percentTrue);
+      }
+    }
+    return matrix;
+  }
+
   public static int[][] randomMatrix(int M, int N, int min, int max) {
     int[][] matrix = new int[M][N];
     for (int i = 0; i < M; i++) {
@@ -29,6 +39,7 @@ public class AssortedMethods {
     }
     return matrix;
   }
+
 
   public static int[] randomArray(int N, int min, int max) {
     int[] array = new int[N];
@@ -72,8 +83,14 @@ public class AssortedMethods {
   }
 
   public static String arrayToString(int[] array) {
+    if (array == null) return "";
+    return arrayToString(array, 0, array.length - 1);
+  }
+
+  public static String arrayToString(int[] array, int start, int end) {
     StringBuilder sb = new StringBuilder();
-    for (int v : array) {
+    for (int i = start; i <= end; i++) {
+      int v = array[i];
       sb.append(v + ", ");
     }
     return sb.toString();
@@ -198,8 +215,9 @@ public class AssortedMethods {
         } else {
           queue.remove();
         }
-        if (i == array.length)
+        if (i == array.length) {
           done = true;
+        }
       }
       return root;
     } else {
@@ -209,8 +227,8 @@ public class AssortedMethods {
 
   public static String getLongTextBlob() {
     String book = "As they rounded a bend in the path that ran beside the river, Lara recognized the silhouette of a fig tree atop a nearby hill. The weather was hot and the days were long. The fig tree was in full leaf, but not yet bearing fruit. "
-            + "Soon Lara spotted other landmarks—an outcropping of limestone beside the path that had a silhouette like a man’s face, a marshy spot beside the river where the waterfowl were easily startled, a tall tree that looked like a man with his arms upraised. They were drawing near to the place where there was an island in the river. The island was a good spot to make camp. They would sleep on the island tonight."
-            + "Lara had been back and forth along the river path many times in her short life. Her people had not created the path—it had always been there, like the river—but their deerskin-shod feet and the wooden wheels of their handcarts kept the path well worn. Lara’s people were salt traders, and their livelihood took them on a continual journey. ";
+            + "Soon Lara spotted other landmarks�an outcropping of limestone beside the path that had a silhouette like a man�s face, a marshy spot beside the river where the waterfowl were easily startled, a tall tree that looked like a man with his arms upraised. They were drawing near to the place where there was an island in the river. The island was a good spot to make camp. They would sleep on the island tonight."
+            + "Lara had been back and forth along the river path many times in her short life. Her people had not created the path�it had always been there, like the river�but their deerskin-shod feet and the wooden wheels of their handcarts kept the path well worn. Lara�s people were salt traders, and their livelihood took them on a continual journey. ";
     String book_mod = book.replace('.', ' ').replace(',', ' ')
             .replace('-', ' ');
     return book_mod;
@@ -222,6 +240,15 @@ public class AssortedMethods {
 
   public static Trie getTrieDictionary() {
     return new Trie(getListOfWords());
+  }
+
+  public static HashSet<String> getWordListAsHashSet() {
+    String[] wordList = getListOfWords();
+    HashSet<String> wordSet = new HashSet<String>();
+    for (String s : wordList) {
+      wordSet.add(s);
+    }
+    return wordSet;
   }
 
   public static String[] getListOfWords() {
@@ -266,7 +293,7 @@ public class AssortedMethods {
             "real", "John", "line", "second", "church", "seem", "certain",
             "big", "Four", "felt", "several", "children", "service",
             "feel", "important", "rather", "name", "per", "among", "often",
-            "turn", "development", "keep", "family", "seemed", "white",
+            "turn", "development", "developmentcomputer", "keep", "family", "seemed", "white",
             "company", "mind", "members", "others", "within", "done",
             "along", "turned", "god", "sense", "week", "best", "change",
             "kind", "began", "child", "ever", "law", "matter", "least",
@@ -564,7 +591,7 @@ public class AssortedMethods {
             "represent", "skill", "spell", "broken", "arch", "angle",
             "sick", "swell", "blind", "Contemporary", "engineer",
             "military", "boundary", "location", "homes", "boil",
-            "officials", "operator", "Senate", "lend" };
+            "officials", "operator", "Senate", "lend", "hearts", "embers", "abused", "resins", "trendy", "ssdsy" };
     return wordList;
   }
 }
