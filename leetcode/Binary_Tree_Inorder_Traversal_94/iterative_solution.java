@@ -3,7 +3,7 @@ package Binary_Tree_Inorder_Traversal_94;
 import java.util.*;
 
 public class iterative_solution {
-  public List<Integer> inorderTraversal(TreeNode root) {
+  public static List<Integer> inorderTraversal(TreeNode root) {
     List<Integer> result = new LinkedList<>();
     Stack<TreeNode> st = new Stack<>();
     if (root != null) st.push(root);
@@ -24,5 +24,28 @@ public class iterative_solution {
       }
     }
     return result;
+  }
+  public static void main(String[] args) {
+    /* Construct the following tree
+                   1
+                 /   \
+                /     \
+               2       3
+              /      /   \
+             /      /     \
+            4      5       6
+                  / \
+                 /   \
+                7     8
+    */
+    TreeNode tree = new TreeNode(1);
+    tree.left = new TreeNode(2);
+    tree.right = new TreeNode(3);
+    tree.left.left = new TreeNode(4);
+    tree.right.left = new TreeNode(5);
+    tree.right.right = new TreeNode(6);
+    tree.right.left.left = new TreeNode(7);
+    tree.right.left.right = new TreeNode(8);
+    System.out.println(inorderTraversal(tree));
   }
 }
