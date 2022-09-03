@@ -2,30 +2,35 @@ package Binary_Tree_Level_Order_Traversal_102;
 
 import java.util.*;
 
-class Solution {
-  static List<List<Integer>> levels = new ArrayList<List<Integer>>();
+public class BFS_solution {
 
-  public static void helper(TreeNode node, int level) {
-    // start the current level
-    if (levels.size() == level)
-      levels.add(new ArrayList<Integer>());
-
-    // fulfil the current level
-    levels.get(level).add(node.val);
-
-    // process child nodes for the next level
-    if (node.left != null)
-      helper(node.left, level + 1);
-    if (node.right != null)
-      helper(node.right, level + 1);
-  }
+  public static List<List<Integer>> resList = new ArrayList<List<Integer>>();
 
   public static List<List<Integer>> levelOrder(TreeNode root) {
-    if (root == null) return levels;
-    helper(root, 0);
-    return levels;
-  }
+    helper(root);
 
+    return resList;
+  }
+  public static void helper(TreeNode node) {
+    if (node == null) return;
+    Queue<TreeNode> que = new LinkedList<TreeNode>();
+    que.offer(node);
+
+    while (!que.isEmpty()) {
+      List<Integer> itemList = new ArrayList<Integer>();
+      int len = que.size();
+
+      while (len > 0) {
+        TreeNode tmpNode = que.poll();
+        itemList.add(tmpNode.val);
+
+        if (tmpNode.left != null) que.offer(tmpNode.left);
+        if (tmpNode.right != null) que.offer(tmpNode.right);
+        len--;
+      }
+      resList.add(itemList);
+    }
+  }
   public static void main(String[] args) {
     /* Construct the following tree
                    1
