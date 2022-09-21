@@ -1,7 +1,7 @@
 package Minimum_Depth_of_Binary_Tree_111;
 
 public class Solution {
-  public int minDepth(TreeNode root) {
+  public static int minDepth(TreeNode root) {
     if (root == null) {
       return 0;
     }
@@ -19,5 +19,30 @@ public class Solution {
     }
 
     return min_depth + 1;
+  }
+
+  public static void main(String[] args) {
+    /* Construct the following tree
+                   1
+                 /   \
+                /     \
+               2       3
+              /      /   \
+             /      /     \
+            4      5       6
+                  / \
+                 /   \
+                7     8
+    */
+//    Root, Left, Right
+    TreeNode tree = new TreeNode(1);
+    tree.left = new TreeNode(2);
+    tree.right = new TreeNode(3);
+    tree.left.left = new TreeNode(4);
+    tree.right.left = new TreeNode(5);
+    tree.right.right = new TreeNode(6);
+    tree.right.left.left = new TreeNode(7);
+    tree.right.left.right = new TreeNode(8);
+    System.out.println(minDepth(tree));
   }
 }
