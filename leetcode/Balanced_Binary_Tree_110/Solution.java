@@ -1,9 +1,7 @@
 package Balanced_Binary_Tree_110;
 
 class Solution {
-  /**
-   * 递归法
-   */
+
   public static boolean isBalanced(TreeNode root) {
     return getHeight(root) != -1;
   }
