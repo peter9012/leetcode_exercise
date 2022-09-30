@@ -19,6 +19,7 @@ public class Solution {
   }
 
   public static void main(String[] args) {
+
     /* Construct the following tree
                    1
                  /   \
