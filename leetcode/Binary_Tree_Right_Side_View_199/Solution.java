@@ -2,6 +2,7 @@ package Binary_Tree_Right_Side_View_199;
 
 import java.util.*;
 
+
 public class Solution {
   static List<Integer> rightside = new ArrayList();
 
