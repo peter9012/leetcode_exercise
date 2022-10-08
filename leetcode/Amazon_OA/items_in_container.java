@@ -2,7 +2,6 @@ package Amazon_OA;
 
 import java.util.*;
 
-
 public class items_in_container {
   public static List<Integer> numberOfItems(String s, List<Integer> startIndices, List<Integer> endIndices) {
     int[] mem = new int[s.length()];
