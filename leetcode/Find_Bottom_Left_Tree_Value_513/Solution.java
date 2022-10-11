@@ -10,6 +10,7 @@ class Solution {
     return value;
   }
 
+
   private static void findLeftValue(TreeNode root, int deep) {
     if (root == null) return;
     if (root.left == null && root.right == null) {
