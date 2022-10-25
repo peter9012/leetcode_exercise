@@ -36,6 +36,15 @@ public class Solution {
   }
 
   public static void main(String[] args) {
+        /* Construct the following tree
+                   5
+                 /   \
+                /     \
+               3       6
+              / \       \
+             /   \       \
+            2     4       7
+    */
     TreeNode tree = new TreeNode(5);
     tree.left = new TreeNode(3);
     tree.right = new TreeNode(6);
