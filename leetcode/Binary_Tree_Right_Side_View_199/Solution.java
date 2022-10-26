@@ -37,6 +37,7 @@ public class Solution {
                 7     8
     */
 //    Root, Left, Right
+
     TreeNode tree = new TreeNode(1);
     tree.left = new TreeNode(2);
     tree.right = new TreeNode(3);
