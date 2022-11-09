@@ -37,7 +37,6 @@ public class Solution {
   public static void main(String[] args)
   {
 
-    // given number
     int n = 9;
     int k = 3;
     List<List<Integer>> ans = combinationSum3(k, n);
