@@ -3,12 +3,12 @@ package Combination_Sum_II_40;
 import java.util.*;
 
 public class Solution {
-  LinkedList<Integer> path = new LinkedList<>();
-  List<List<Integer>> ans = new ArrayList<>();
-  boolean[] used;
-  int sum = 0;
+  static LinkedList<Integer> path = new LinkedList<>();
+  static List<List<Integer>> ans = new ArrayList<>();
+  static boolean[] used;
+  static int sum = 0;
 
-  public List<List<Integer>> combinationSum2(int[] candidates, int target) {
+  public static List<List<Integer>> combinationSum2(int[] candidates, int target) {
     used = new boolean[candidates.length];
     // 加标志数组，用来辅助判断同层节点是否已经遍历
     Arrays.fill(used, false);
@@ -18,7 +18,7 @@ public class Solution {
     return ans;
   }
 
-  private void backTracking(int[] candidates, int target, int startIndex) {
+  private static void backTracking(int[] candidates, int target, int startIndex) {
     if (sum == target) {
       ans.add(new ArrayList(path));
     }
@@ -39,6 +39,13 @@ public class Solution {
       sum -= candidates[i];
       path.removeLast();
     }
+  }
+
+  public static void main(String[] args)
+  {
+    int[] candidates = {10,1,2,7,6,1,5};
+    int target = 8;
+    System.out.println(Arrays.toString(combinationSum2(candidates,target).toArray()));
   }
 }
 
