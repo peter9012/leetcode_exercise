@@ -1,8 +1,8 @@
 package Decode_String_394;
 
 public class Recursion_Solution {
-  int index = 0;
-  String decodeString(String s) {
+  static int index = 0;
+  static String decodeString(String s) {
     StringBuilder result = new StringBuilder();
     while (index < s.length() && s.charAt(index) != ']') {
       if (!Character.isDigit(s.charAt(index)))
@@ -23,5 +23,10 @@ public class Recursion_Solution {
       }
     }
     return new String(result);
+  }
+  public static void main(String args[])
+  {
+    String s = "2[abc]3[cd]ef";
+    System.out.println(decodeString(s));
   }
 }
