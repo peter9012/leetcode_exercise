@@ -1,7 +1,7 @@
 package Lemonade_Change_860;
 
 public class Solution {
-  public boolean lemonadeChange(int[] bills) {
+  public static boolean lemonadeChange(int[] bills) {
     int five = 0;
     int ten = 0;
 
@@ -23,5 +23,10 @@ public class Solution {
     }
 
     return true;
+  }
+  public static void main(String args[])
+  {
+    int bills[] = { 5,5,5,10,20 };
+    System.out.println(lemonadeChange(bills));
   }
 }
