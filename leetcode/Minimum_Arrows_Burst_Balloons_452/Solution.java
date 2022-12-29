@@ -3,7 +3,7 @@ package Minimum_Arrows_Burst_Balloons_452;
 import java.util.Arrays;
 
 public class Solution {
-  public int findMinArrowShots(int[][] points) {
+  public static int findMinArrowShots(int[][] points) {
     // 根据气球直径的开始坐标从小到大排序
     // 使用Integer内置比较方法，不会溢出
     Arrays.sort(points, (a, b) -> Integer.compare(a[0], b[0]));
@@ -17,5 +17,10 @@ public class Solution {
       }
     }
     return count;
+  }
+  public static void main(String[] args)
+  {
+    int[][] points = {{10,16},{2,8},{1,6},{7,12}};
+    System.out.println(findMinArrowShots(points));
   }
 }
