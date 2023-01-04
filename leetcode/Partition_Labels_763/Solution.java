@@ -3,7 +3,7 @@ package Partition_Labels_763;
 import java.util.*;
 
 public class Solution {
-  public List<Integer> partitionLabels(String S) {
+  public static List<Integer> partitionLabels(String S) {
     List<Integer> list = new LinkedList<>();
     int[] edge = new int[26];
     char[] chars = S.toCharArray();
@@ -20,5 +20,10 @@ public class Solution {
       }
     }
     return list;
+  }
+  public static void main(String[] args)
+  {
+    String s = "ababcbacadefegdehijhklij";
+    System.out.println(partitionLabels(s));
   }
 }
