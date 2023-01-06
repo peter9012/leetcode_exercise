@@ -23,7 +23,7 @@ public class Solution {
   }
   public static void main(String[] args)
   {
-    String s = "ababcbacadefegdehijhklij";
+    String s = "ababcbacadefegdehijhklijj";
     System.out.println(partitionLabels(s));
   }
 }
