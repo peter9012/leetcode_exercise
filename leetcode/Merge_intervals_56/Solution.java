@@ -2,6 +2,7 @@ package Merge_intervals_56;
 
 import java.util.*;
 
+
 public class Solution {
   public int[][] merge(int[][] intervals) {
     List<int[]> res = new LinkedList<>();
