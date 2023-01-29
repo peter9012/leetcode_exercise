@@ -1,7 +1,7 @@
 package Min_Cost_Climbing_Stairs_746;
 
 class Solution {
-  public int minCostClimbingStairs(int[] cost) {
+  public static int minCostClimbingStairs(int[] cost) {
     int len = cost.length;
     int[] dp = new int[len + 1];
 
@@ -15,5 +15,11 @@ class Solution {
     }
 
     return dp[len];
+  }
+
+  public static void main(String[] args)
+  {
+    int[] arr = {1, 100, 1, 1, 1, 100, 1, 1, 100, 1};
+    System.out.println(minCostClimbingStairs(arr));
   }
 }
