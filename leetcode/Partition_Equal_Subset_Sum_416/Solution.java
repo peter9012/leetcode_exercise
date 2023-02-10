@@ -1,7 +1,7 @@
 package Partition_Equal_Subset_Sum_416;
 
 public class Solution {
-  public boolean canPartition(int[] nums) {
+  public static boolean canPartition(int[] nums) {
     if(nums == null || nums.length == 0) return false;
     int n = nums.length;
     int sum = 0;
@@ -19,5 +19,9 @@ public class Solution {
       }
     }
     return dp[target] == target;
+  }
+  public static void main(String[] args) {
+    int[] arr = new int[]{1, 5, 11, 5};
+    System.out.println(canPartition(arr));
   }
 }
