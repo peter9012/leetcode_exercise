@@ -11,7 +11,6 @@ public class Solution {
       char c = s.charAt(i);
       count.put(c, count.getOrDefault(c, 0) + 1);
     }
-
     // find the index
     for (int i = 0; i < n; i++) {
       if (count.get(s.charAt(i)) == 1)
