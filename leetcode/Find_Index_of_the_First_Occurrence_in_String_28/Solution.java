@@ -1,7 +1,7 @@
 package Find_Index_of_the_First_Occurrence_in_String_28;
 
 public class Solution {
-  public int strStr(String haystack, String needle) {
+  public static int strStr(String haystack, String needle) {
     int m = needle.length();
     int n = haystack.length();
 
@@ -17,5 +17,10 @@ public class Solution {
     }
 
     return -1;
+  }
+  public static void main(String args[])
+  {
+    String haystack = "sadbutsad", needle = "sad";
+    System.out.println(strStr(haystack, needle));
   }
 }
