@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class job_schedule {
+public class  job_schedule {
   public int minDifficulty(int[] jobDifficulty, int D) {
     final int N = jobDifficulty.length;
     if(N < D) return -1;
