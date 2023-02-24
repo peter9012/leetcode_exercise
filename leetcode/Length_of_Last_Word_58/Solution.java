@@ -1,7 +1,7 @@
 package Length_of_Last_Word_58;
 
 public class Solution {
-  public int lengthOfLastWord(String s) {
+  public static int lengthOfLastWord(String s) {
     int p = s.length() - 1;
     while (p >= 0 && s.charAt(p) == ' ') {
       p--;
@@ -14,5 +14,11 @@ public class Solution {
     }
 
     return length;
+  }
+
+  public static void main(String args[])
+  {
+    String s = "   fly me   to   the moon  ";
+    System.out.println(lengthOfLastWord(s));
   }
 }
