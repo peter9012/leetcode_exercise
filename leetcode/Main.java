@@ -1,8 +1,3 @@
-import java.util.*;
-
-import Perfect_Square_279.perfect_square;
-import Perfect_Square_279.perfect_square_02;
-
 class Main {
   public static void main(String[] args) {
     // decode_string_01 pa = new decode_string_01();
@@ -117,8 +112,8 @@ class Main {
     // String str = "aaabbbcc";
     // System.out.println(compressString.compress(str));
 
-    partition_label partitionLabel = new partition_label();
-    String str = "ababcbacadefegdehijhklij";
-    System.out.println(partitionLabel.partitionLabels(str));
+//    partition_label partitionLabel = new partition_label();
+//    String str = "ababcbacadefegdehijhklij";
+//    System.out.println(partitionLabel.partitionLabels(str));
   } 
 }
