@@ -1,7 +1,7 @@
 package Last_Stone_Weight_1049;
 
 public class Solution {
-  public int lastStoneWeightII(int[] stones) {
+  public static int lastStoneWeightII(int[] stones) {
     int sum = 0;
     for (int i : stones) {
       sum += i;
@@ -17,5 +17,11 @@ public class Solution {
       }
     }
     return sum - 2 * dp[target];
+  }
+  static public void main (String[] args)
+  {
+    int []stones = {2,7,4,1,8,1};
+    int res = lastStoneWeightII(stones);
+    System.out.println("Return the smallest possible weight of the left stone: "+ res);
   }
 }
