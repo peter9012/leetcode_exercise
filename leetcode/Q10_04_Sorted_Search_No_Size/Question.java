@@ -27,6 +27,7 @@ public class Question {
     return binarySearch(list, value, index / 2, index);
   }
 
+
   public static void main(String[] args) {
     int[] array = {1, 2, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 16, 18};
     Listy list = new Listy(array);
