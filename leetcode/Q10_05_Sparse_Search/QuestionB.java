@@ -5,7 +5,6 @@ public class QuestionB {
     while (first <= last) {
       /* Move mid to the middle */
       int mid = (last + first) / 2;
-
       /* If mid is empty, find closest non-empty string */
       if (strings[mid].isEmpty()) {
         int left = mid - 1;
