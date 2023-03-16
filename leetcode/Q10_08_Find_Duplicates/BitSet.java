@@ -2,7 +2,6 @@ package Q10_08_Find_Duplicates;
 
 public class BitSet {
   int[] bitset;
-
   public BitSet(int size) {
     bitset = new int[(size >> 5) + 1]; // divide by 32
   }
