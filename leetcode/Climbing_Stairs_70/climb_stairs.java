@@ -1,7 +1,5 @@
 package Climbing_Stairs_70;
 
-import java.util.HashMap;
-
 public class climb_stairs {
   // Brute Force
   // public int climbStairs(int n) {
@@ -42,17 +40,17 @@ public class climb_stairs {
   // }
 
   //  top-down implementation
-  private HashMap<Integer, Integer> memo = new HashMap<>();
-  private int dp(int i){
-    if (i <= 2) return i;
-    if (!memo.containsKey(i)) {
-      memo.put(i, dp(i-1)+ dp(i-2));
-    }
-    return memo.get(i);
-  }
-  public int climbStairs(int n) {
-    return dp(n);
-  }
+//  private HashMap<Integer, Integer> memo = new HashMap<>();
+//  private int dp(int i){
+//    if (i <= 2) return i;
+//    if (!memo.containsKey(i)) {
+//      memo.put(i, dp(i-1)+ dp(i-2));
+//    }
+//    return memo.get(i);
+//  }
+//  public int climbStairs(int n) {
+//    return dp(n);
+//  }
 
   // Dynamic Programming
 //  public int climbStairs(int n) {
