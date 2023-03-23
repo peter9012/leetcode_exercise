@@ -14,6 +14,7 @@ public class DP_Solution {
 
     return dp[nums.length - 1];
   }
+
   public static void main(String[] args)
   {
     int[] arr = {1, 2, 3, 1};
