@@ -1,7 +1,7 @@
 package Is_Subsequence_392;
 
 public class Solution {
-  public boolean isSubsequence(String s, String t) {
+  public static boolean isSubsequence(String s, String t) {
     int leftbound = s.length(), rightbound = t.length();
     int leftPointer = 0, rightPointer = 0;
     while (leftPointer < leftbound && rightPointer < rightbound) {
@@ -11,5 +11,9 @@ public class Solution {
       rightPointer += 1;
     }
     return leftPointer == leftbound;
+  }
+  public static void main(String[] args) {
+    String s  = "abc", t = "ahbgdc";
+    System.out.println(isSubsequence(s,t));
   }
 }
