@@ -16,7 +16,7 @@ public class Solution {
     return maxLength;
   }
   public static void main(String[] args) {
-    String str = "ABAB";
+    String str = "AABABBA";
     int k = 2;
     System.out.println(characterReplacement(str, k));
   }
