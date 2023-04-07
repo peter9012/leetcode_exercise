@@ -1,7 +1,7 @@
 package Longest_Repeating_Character_Replacement_424;
 
 public class Solution {
-  public int characterReplacement(String s, int k) {
+  public static int characterReplacement(String s, int k) {
     int len = s.length();
     int[] count = new int[26];
     int start = 0, maxCount = 0, maxLength = 0;
@@ -15,5 +15,9 @@ public class Solution {
     }
     return maxLength;
   }
-
+  public static void main(String[] args) {
+    String str = "ABAB";
+    int k = 2;
+    System.out.println(characterReplacement(str, k));
+  }
 }
