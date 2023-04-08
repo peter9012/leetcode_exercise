@@ -3,7 +3,7 @@ package Minimum_Time_Difference_539;
 import java.util.*;
 
 public class Solution {
-  public int findMinDifference(List<String> timePoints) {
+  public static int findMinDifference(List<String> timePoints) {
     if (timePoints.size() > 24 * 60) {
       return 0;
     }
@@ -19,5 +19,10 @@ public class Solution {
       res = Math.min(res, mins.get(i) - mins.get(i - 1));
     }
     return res;
+  }
+
+  public static void main(String[] args) {
+    String[] timePoints = {"23:30","23:59","12:00","24:00"};
+    System.out.println(findMinDifference(List.of(timePoints)));
   }
 }
