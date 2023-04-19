@@ -4,11 +4,11 @@ import java.util.*;
 
 public class Solution {
   // Return true if stone a and b shares row or column
-  boolean shareSameRowOrColumn(int[] a, int[] b) {
+  static boolean shareSameRowOrColumn(int[] a, int[] b) {
     return a[0] == b[0] || a[1] == b[1];
   }
 
-  void dfs(int[][] stones, List<Integer>[] adj, int[] visited, int src) {
+  static void dfs(int[][] stones, List<Integer>[] adj, int[] visited, int src) {
     // Mark the stone as visited
     visited[src] = 1;
 
@@ -20,7 +20,7 @@ public class Solution {
     }
   }
 
-  int removeStones(int[][] stones) {
+  static int removeStones(int[][] stones) {
     // Adjacency list to store edges
     List<Integer>[] adj = new ArrayList[stones.length];
     for (int i = 0; i < stones.length; i++) {
@@ -51,5 +51,9 @@ public class Solution {
 
     // Return the maximum stone that can be removed
     return stones.length - componentCount;
+  }
+  public static void main(String[] args) {
+    int [][]stones = {{0,0},{0,1},{1,0},{1,2},{2,1},{2,2}};
+    System.out.println("The maximum stone that can be removed: s"+ removeStones(stones));
   }
 }
