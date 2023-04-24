@@ -2,41 +2,59 @@ package Flatten_Binary_Tree_Linked_114;
 
 public class Solution {
 
-  private TreeNode flattenTree(TreeNode node) {
+  public static void flatten(TreeNode root) {
+    if (root == null) return;
 
-    // Handle the null scenario
-    if (node == null) {
-      return null;
-    }
+    TreeNode left = root.left;
+    TreeNode right = root.right;
 
-    // For a leaf node, we simply return the
-    // node as is.
-    if (node.left == null && node.right == null) {
-      return node;
-    }
+    root.left = null;
 
-    //Recursively flatten the left subtree
-    TreeNode leftTail = this.flattenTree(node.left);
+    flatten(left);
+    flatten(right);
 
-    // Recursively flatten the right subtree
-    TreeNode rightTail = this.flattenTree(node.right);
-
-    // If there was a left subtree, we shuffle the connections
-    // around so that there is nothing on the left side
-    // anymore.
-    if (leftTail != null) {
-      leftTail.right = node.right;
-      node.right = node.left;
-      node.left = null;
-    }
-
-    // We need to return the "rightmost" node after we are
-    // done wiring the new connections.
-    return rightTail == null ? leftTail : rightTail;
+    root.right = left;
+    TreeNode cur = root;
+    while (cur.right != null) cur = cur.right;
+    cur.right = right;
   }
 
-  public void flatten(TreeNode root) {
+  public static void inOrder(TreeNode node)
+  {
+    // Base Condition
+    if (node == null)
+      return;
+    inOrder(node.left);
+    System.out.print(node.val + " ");
+    inOrder(node.right);
+  }
 
-    this.flattenTree(root);
+  public static void main(String[] args) {
+
+    /* Construct the following tree
+                   1
+                 /   \
+                /     \
+               2       3
+              /      /   \
+             /      /     \
+            4      5       6
+                  / \
+                 /   \
+                7     8
+    */
+    TreeNode tree = new TreeNode(1);
+    tree.left = new TreeNode(2);
+    tree.right = new TreeNode(3);
+    tree.left.left = new TreeNode(4);
+    tree.right.left = new TreeNode(5);
+    tree.right.right = new TreeNode(6);
+    tree.right.left.left = new TreeNode(7);
+    tree.right.left.right = new TreeNode(8);
+    System.out.println(
+            "The Inorder traversal after flattening binary tree ");
+    flatten(tree);
+    inOrder(tree);
+
   }
 }
