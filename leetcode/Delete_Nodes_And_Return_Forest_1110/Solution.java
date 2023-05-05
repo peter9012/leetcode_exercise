@@ -13,7 +13,6 @@ public class Solution {
     helper(root, true);
     return res;
   }
-
   private TreeNode helper(TreeNode node, boolean is_root) {
     if (node == null) return null;
     boolean deleted = to_delete_set.contains(node.val);
