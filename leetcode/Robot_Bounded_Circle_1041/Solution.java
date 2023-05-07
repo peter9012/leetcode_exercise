@@ -1,6 +1,6 @@
-import javax.lang.model.util.ElementScanner6;
+package Robot_Bounded_Circle_1041;
 
-public class robot_in_circle {
+public class Solution {
   public boolean isRobotBounded(String instructions) {
     int[][] directions = new int[][]{{0,1},{1,0},{0,-1},{-1,0}};
     int x = 0, y = 0;
@@ -12,10 +12,10 @@ public class robot_in_circle {
         index = ( index + 1 ) % 4;
       else {
         x += directions[index][0];
-        y += directions[index][1]; 
+        y += directions[index][1];
       }
 
     }
-    return (x == 0 && y == 0) || (index != 0); 
+    return (x == 0 && y == 0) || (index != 0);
   }
 }
