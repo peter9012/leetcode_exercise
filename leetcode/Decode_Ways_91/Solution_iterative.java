@@ -1,6 +1,7 @@
-public class string_decode_ways_iterative {
+package Decode_Ways_91;
 
-  public int numDecodings(String s) {
+public class Solution_iterative {
+  public static int numDecodings(String s) {
     // DP array to store the subproblem results
     int[] dp = new int[s.length() + 1];
     dp[0] = 1;
@@ -24,7 +25,7 @@ public class string_decode_ways_iterative {
     return dp[s.length()];
   }
 
-  public int numDecodings_space(String s) {  
+  public int numDecodings_space(String s) {
     if (s.charAt(0) == '0') {
         return 0;
     }
@@ -41,11 +42,15 @@ public class string_decode_ways_iterative {
         if (twoDigit >= 10 && twoDigit <= 26) {
             current += twoBack;
         }
-       
+
         twoBack = oneBack;
         oneBack = current;
     }
     return oneBack;
   }
-  
+    public static void main(String[] args)
+  {
+    String str = "226";
+    System.out.printf("Count is %d", numDecodings(str));
+  }
 }
