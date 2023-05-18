@@ -3,7 +3,7 @@ package Repeated_DNA_Sequences_187;
 import java.util.*;
 
 public class Solution {
-  public List<String> findRepeatedDnaSequences(String s) {
+  public static List<String> findRepeatedDnaSequences(String s) {
     int L = 10, n = s.length();
     HashSet<String> seen = new HashSet(), output = new HashSet();
 
@@ -14,5 +14,10 @@ public class Solution {
       seen.add(tmp);
     }
     return new ArrayList<String>(output);
+  }
+
+  public static void main(String[] args) {
+    String s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT";
+    System.out.println(findRepeatedDnaSequences(s));
   }
 }
