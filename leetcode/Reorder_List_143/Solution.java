@@ -42,6 +42,7 @@ public class Solution {
       System.out.println("null");
   }
 
+
   public static void main(String[] args) {
     int[] keys = {1, 2, 3, 4, 5, 6};
     ListNode l1 = null;
