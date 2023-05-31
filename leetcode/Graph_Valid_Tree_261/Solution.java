@@ -31,6 +31,7 @@ public class Solution {
         parent.put(neighbour, node);
       }
     }
+
     return parent.size() == n;
   }
 }
