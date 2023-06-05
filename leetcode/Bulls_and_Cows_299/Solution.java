@@ -36,7 +36,7 @@ public class Solution {
 
     return Integer.toString(bulls) + "A" + Integer.toString(cows) + "B";
   }
-  
+
   public static void main(String[] args)
   {
     String secret = "1807";
