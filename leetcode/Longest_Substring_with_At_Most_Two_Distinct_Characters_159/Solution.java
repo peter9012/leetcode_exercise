@@ -3,7 +3,7 @@ package Longest_Substring_with_At_Most_Two_Distinct_Characters_159;
 import java.util.*;
 
 public class Solution {
-  public int lengthOfLongestSubstringTwoDistinct(String s) {
+  public static int lengthOfLongestSubstringTwoDistinct(String s) {
     int n = s.length();
     if (n < 3) return n;
 
@@ -32,5 +32,10 @@ public class Solution {
       max_len = Math.max(max_len, right - left);
     }
     return max_len;
+  }
+  public static void main(String[] args) {
+    String s = "ccaabbb";
+    System.out.println(lengthOfLongestSubstringTwoDistinct(s));
+
   }
 }
