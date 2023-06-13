@@ -17,7 +17,7 @@ public class Solution {
         triangle.get(row).set(col, path);
       }
     }
-    
+
     return Collections.min(triangle.get(triangle.size() - 1));
   }
 }
