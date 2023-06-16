@@ -54,5 +54,6 @@ public class Solution {
             { 10,13,14,17,24 },
             {18,21,23,26,30}};
     System.out.println(searchMatrix(matrix,5));
+    
   }
 }
