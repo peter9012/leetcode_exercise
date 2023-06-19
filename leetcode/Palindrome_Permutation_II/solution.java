@@ -8,6 +8,7 @@ public class solution {
     permute(s.toCharArray(), 0);
     return new ArrayList < String > (set);
   }
+  
   public boolean isPalindrome(char[] s) {
     for (int i = 0; i < s.length; i++) {
       if (s[i] != s[s.length - 1 - i])
@@ -15,11 +16,14 @@ public class solution {
     }
     return true;
   }
+
   public void swap(char[] s, int i, int j) {
     char temp = s[i];
     s[i] = s[j];
     s[j] = temp;
   }
+
+
   void permute(char[] s, int l) {
     if (l == s.length) {
       if (isPalindrome(s))
