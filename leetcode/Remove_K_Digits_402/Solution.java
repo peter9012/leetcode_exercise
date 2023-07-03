@@ -1,7 +1,9 @@
 package Remove_K_Digits_402;
 
+import java.util.*;
+
 public class Solution {
-  public String removeKdigits(String num, int k) {
+  public static String removeKdigits(String num, int k) {
     LinkedList<Character> stack = new LinkedList<Character>();
 
     for(char digit : num.toCharArray()) {
@@ -29,5 +31,10 @@ public class Solution {
     /* return the final string  */
     if (ret.length() == 0) return "0";
     return ret.toString();
+  }
+  public static void main(String[] args) {
+    String nums = "1432219";
+    int k = 3;
+    System.out.println(removeKdigits(nums, k));
   }
 }
