@@ -1,7 +1,7 @@
 package Q1_01_Is_Unique;
 
 public class Solution {
-  
+
   public static boolean isUniqueChars(String str) {
     if (str.length() > 128) return false;
     boolean[] char_set = new boolean[128];
