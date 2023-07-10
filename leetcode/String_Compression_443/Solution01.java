@@ -1,7 +1,7 @@
 package String_Compression_443;
 
 public class Solution01 {
-  public int compress(char[] chars) {
+  public static int compress(char[] chars) {
     int i = 0, res = 0;
     while (i < chars.length) {
       int groupLength = 1;
@@ -17,5 +17,9 @@ public class Solution01 {
       i += groupLength;
     }
     return res;
+  }
+  public static void main(String[] args) {
+    char[] charArray={'a','a','b','b','c','c','c'};
+    System.out.println(compress(charArray));
   }
 }
