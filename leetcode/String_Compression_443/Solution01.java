@@ -18,6 +18,7 @@ public class Solution01 {
     }
     return res;
   }
+  
   public static void main(String[] args) {
     char[] charArray={'a','a','b','b','c','c','c'};
     System.out.println(compress(charArray));
